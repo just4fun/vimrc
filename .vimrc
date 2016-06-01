@@ -22,12 +22,30 @@ Plugin 'tomasr/molokai'
 Plugin 'mustache/vim-mustache-handlebars'
 
 " plugins
+
+" tree explorer
 Plugin 'scrooloose/nerdtree'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'kien/ctrlp.vim'
+
+" show git status in nerdtree
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+
+" show git diff in the gutter
 Plugin 'airblade/vim-gitgutter'
+
+" vim motion
+Plugin 'easymotion/vim-easymotion'
+
+" file quick finder
+Plugin 'kien/ctrlp.vim'
+
+" vim statusline
 Plugin 'Lokaltog/vim-powerline'
+
+" git commands wrapper
 Plugin 'tpope/vim-fugitive'
+
+" global search tool
+Plugin 'mileszs/ack.vim'
 
 " ==========Customized Plugins End==========
 
@@ -59,6 +77,11 @@ color molokai
 " change default mapleader key
 let mapleader=';'
 
+" set tab size and indent
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
 " `2` is same as `set backspace=indent,eol,start`
 set backspace=2
 
@@ -67,6 +90,9 @@ set laststatus=2
 
 " show line number
 set number
+
+" highlight current word
+set hlsearch
 
 " highlight current line and column
 set cul
@@ -80,7 +106,7 @@ set updatetime=250
 map <C-l> :tabn<CR>
 map <C-h> :tabp<CR>
 map <C-n> :tabnew<CR>
-map <C-w> :tabclose<CR>
+map <C-e> :tabclose<CR>
 
 map <leader>n :NERDTreeToggle<CR>
 map <leader>r :NERDTreeFind<CR>
@@ -92,9 +118,10 @@ map <leader>gb :Gblame<CR>
 "map <leader>gc :Gcommit<CR>
 "map <leader>gp :Git push<CR>
 
-" ignore specific folders when using `ctrlp.vim`
+" ignore specific folders while using `ctrlp.vim`
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.git|\.idea|node_modules|bower_components|build|dist|vendor|tmp$',
   \ }
 
 " ==========Customized Settings End==========
+
