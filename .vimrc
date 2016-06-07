@@ -15,7 +15,6 @@ Plugin 'VundleVim/Vundle.vim'
 " ==========Customized Plugins Start==========
 
 " themes
-Plugin 'dracula/vim'
 Plugin 'tomasr/molokai'
 
 " syntax highlighting
@@ -47,6 +46,9 @@ Plugin 'tpope/vim-fugitive'
 " global search tool
 Plugin 'mileszs/ack.vim'
 
+" most recently used
+Plugin 'vim-scripts/mru.vim'
+
 " ==========Customized Plugins End==========
 
 " All of your Plugins must be added before the following line
@@ -72,7 +74,6 @@ syntax on
 " theme
 set background=dark
 color molokai
-"color dracula
 
 " change default mapleader key
 let mapleader=';'
@@ -108,15 +109,20 @@ map <C-h> :tabp<CR>
 map <C-n> :tabnew<CR>
 map <C-e> :tabclose<CR>
 
+" for `nerdtree` plugin
 map <leader>n :NERDTreeToggle<CR>
 map <leader>r :NERDTreeFind<CR>
 
+" for `vim-fugitive` plugin
 map <leader>gb :Gblame<CR>
 "map <leader>gs :Gstatus<CR>
 "map <leader>gd :Gdiff<CR>
 "map <leader>gl :Glog<CR>
 "map <leader>gc :Gcommit<CR>
 "map <leader>gp :Git push<CR>
+
+" for `mru.vim` plugin
+map <leader>mr :MRU<CR>
 
 " ignore specific folders while using `ctrlp.vim`
 let g:ctrlp_custom_ignore = {
