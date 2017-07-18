@@ -49,6 +49,9 @@ Plugin 'mileszs/ack.vim'
 " most recently used
 Plugin 'vim-scripts/mru.vim'
 
+" code commenter
+Plugin 'scrooloose/nerdcommenter'
+
 " ==========Customized Plugins End==========
 
 " All of your Plugins must be added before the following line
@@ -123,6 +126,11 @@ map <leader>gb :Gblame<CR>
 
 " for `mru.vim` plugin
 map <leader>mr :MRU<CR>
+
+" for `nerdcommenter` plugin
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
 
 " ignore specific folders while using `ctrlp.vim`
 let g:ctrlp_custom_ignore = {
