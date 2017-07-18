@@ -24,4 +24,4 @@ Pushed it to GitHub so I can fetch it anywhere with different computers.
   vim +PluginInstall +qall
   ```
 
-Enjoy.
+5. Enjoy.
