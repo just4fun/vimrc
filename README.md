@@ -1,5 +1,3 @@
-Pushed it to GitHub so I can fetch it anywhere with different computers.
-
 1. Check out from GitHub
 
   ```bash
@@ -24,4 +22,4 @@ Pushed it to GitHub so I can fetch it anywhere with different computers.
   vim +PluginInstall +qall
   ```
 
-5. Enjoy.
+5. Enjoy
